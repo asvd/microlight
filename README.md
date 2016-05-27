@@ -10,5 +10,5 @@ For demos and usage guide, refer to https://asvd.github.io/microlight
 
 --
 
-follow me on twitter: https://twitter.com/asvd0
+Follow me on twitter: https://twitter.com/asvd0
 
