@@ -6,7 +6,7 @@ microlight.js
 ![]
 (http://asvd.github.io/microlight/microlight-preview-big.png)
 
-For demos and usage guide refer to https://asvd.github.io/microlight
+For demos and usage guide, refer to https://asvd.github.io/microlight
 
 --
 
