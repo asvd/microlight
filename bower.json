@@ -1,0 +1,30 @@
+{
+  "name": "microlight",
+  "version": "0.0.1",
+  "homepage": "https://github.com/asvd/microlight",
+  "authors": [
+    "Dmitry Prokashev <heliosframework@gmail.com>"
+  ],
+  "description": "highlights code in any language",
+  "main": "microlight.js",
+  "moduleType": [
+    "amd",
+    "globals"
+  ],
+  "keywords": [
+    "syntax",
+    "highlight",
+    "highlighting",
+    "source",
+    "code",
+    "source code",
+    "snippet",
+    "code snippet"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ]
+}
