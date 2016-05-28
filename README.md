@@ -1,8 +1,8 @@
 microlight.js
 =============
 
-*microlight.js* is a micro-library (2.2k minified) which simplifies
- reading snippets of source code by highlighting, for any programming
+*microlight.js* is a micro-library (2.2k minified) which improves
+ readability of code snippets by highlighting, for any programming
  language, yet without attaching additional language packages or
  styles:
 
