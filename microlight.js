@@ -162,8 +162,9 @@
                     // initializing a new token
                     token = '';
 
-                    // determining the new token type (going down
-                    // until matching a token type start condition)
+                    // determining the new token type (going up the
+                    // list until matching a token type start
+                    // condition)
                     tokenType = 11;
                     while (![
                         1,                   //  0: whitespace
