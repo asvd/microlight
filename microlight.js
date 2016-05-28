@@ -3,7 +3,7 @@
  * @version 0.0.1
  *
  * @license MIT, see http://github.com/asvd/microlight
- * @copyright 2015 asvd <heliosframework@gmail.com>
+ * @copyright 2016 asvd <heliosframework@gmail.com>
  *
  * Code structure aims at minimizing the compressed library size
  */
