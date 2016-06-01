@@ -37,13 +37,13 @@
 
 
     var process = function(text, color) {
-        var el    = document.createElement('div'),
-            pos   = 0,       // current position
-            next1 = text[0], // next character
-            chr   = 1,       // current character
-            prev1,           // previous character
-            prev2,           // the one before the previous
-            token = '',      // current token content
+        var output = '',      // html output
+            pos    = 0,       // current position
+            next1  = text[0], // next character
+            chr    = 1,       // current character
+            prev1,            // previous character
+            prev2,            // the one before the previous
+            token  = '',      // current token content
             
             // current token type:
             //  0: anything else (whitespaces / newlines)
@@ -111,9 +111,9 @@
                 if (token) {
                     // remapping token type into style
                     // (some types are highlighted similarly)
-                    el[appendChild](
-                        node = _document.createElement('span')
-                    ).setAttribute('style', [
+                    node = _document.createElement('span');
+
+                    node.setAttribute('style', [
                         // 0: not formatted
                         '',
                         // 1: keywords
@@ -147,6 +147,8 @@
                     ]);
 
                     node[appendChild](_document.createTextNode(token));
+
+                    output += node.outerHTML;
                 }
 
                 // saving the previous token type
@@ -190,7 +192,7 @@
             token += chr;
         }
 
-        return el.innerHTML;
+        return output;
     }
 
     var reset = function(i) {
