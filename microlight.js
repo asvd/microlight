@@ -23,11 +23,6 @@
         _document     = document,
         appendChild   = 'appendChild',
         test          = 'test',
-        // style and color templates
-        textShadow    = ';text-shadow:',
-        _0px_0px      = ' 0px 0px ',
-        _3px_0px_5    = '3px 0px 5',
-        brace         = ')',
 
         el,  // current microlighted element to run through
 
