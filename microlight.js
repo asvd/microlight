@@ -25,7 +25,6 @@
         test          = 'test',
         // style and color templates
         textShadow    = ';text-shadow:',
-        opacity       = 'opacity:.',
         _0px_0px      = ' 0px 0px ',
         _3px_0px_5    = '3px 0px 5',
         brace         = ')',
@@ -117,25 +116,17 @@
                         // (some types are highlighted similarly)
                         el[appendChild](
                             node = _document.createElement('span')
-                        ).setAttribute('style', [
+                        ).setAttribute('data_microlight_type', [
                             // 0: not formatted
-                            '',
+                            'not-formatted',
                             // 1: keywords
-                            textShadow + _0px_0px+9+pxColor + alpha * .7 + '),' +
-                                         _0px_0px+2+pxColor + alpha * .4 + brace,
+                            'keywords',
                             // 2: punctuation
-                            opacity + 6 +
-                            textShadow + _0px_0px+7+pxColor + alpha / 4 + '),' +
-                                         _0px_0px+3+pxColor + alpha / 4 + brace,
+                            'punctuation',
                             // 3: strings and regexps
-                            opacity + 7 +
-                            textShadow + _3px_0px_5+pxColor + alpha / 5 + '),-' +
-                                         _3px_0px_5+pxColor + alpha / 5 + brace,
+                            'strings-regex',
                             // 4: comments
-                            'font-style:italic;'+
-                            opacity + 5 +
-                            textShadow + _3px_0px_5+pxColor + alpha / 4 + '),-' +
-                                         _3px_0px_5+pxColor + alpha / 4 + brace
+                            'comments'
                         ][
                             // not formatted
                             !tokenType ? 0 :
@@ -204,4 +195,3 @@
         _window.addEventListener('load', reset, 0);
     }
 }));
-
