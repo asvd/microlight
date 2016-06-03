@@ -5,13 +5,12 @@ microlight.js
 
 *microlight.js* is a micro-library (2.2k minified) which improves
  readability of code snippets by highlighting, for any programming
- language, yet without attaching additional language packages or
- styles:
+ language, yet without attaching additional language packages:
 
 ![preview]
 (https://raw.githubusercontent.com/lopeax/microlight/css-based/microlight.PNG)
 
-For demos and usage guide, refer to http://codepen.io/zephyr/pen/MewjYd
+For a demo refer to http://codepen.io/zephyr/pen/MewjYd
 
 ## CSS
 
