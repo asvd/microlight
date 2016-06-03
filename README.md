@@ -11,10 +11,6 @@ microlight.js
 
 For demos and usage guide, refer to http://codepen.io/zephyr/pen/MewjYd
 
---
-
-Follow me on twitter: https://twitter.com/asvd0
-
 ## CSS
 
 The following are some recommended css rules to target the elements within microlight
