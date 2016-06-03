@@ -7,9 +7,9 @@ microlight.js
  styles:
 
 ![preview]
-(http://asvd.github.io/microlight/microlight-preview-big.png)
+(https://raw.githubusercontent.com/lopeax/microlight/css-based/microlight.PNG)
 
-For demos and usage guide, refer to https://asvd.github.io/microlight
+For demos and usage guide, refer to http://codepen.io/zephyr/pen/MewjYd
 
 --
 
@@ -17,26 +17,43 @@ Follow me on twitter: https://twitter.com/asvd0
 
 ## CSS
 
-The following are the css rules to target the elements within microlight
+The following are some recommended css rules to target the elements within microlight
 
 ```css
+.microlight {
+    font-family: monospace;
+    white-space: pre;
+    background-color: #263238;
+    color: #AABBC3;
+    padding: 15px;
+    text-align: left;
+    overflow-x: auto;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.5);
+    border-radius: 0.2em;
+}
+
+.microlight:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+// Colours inspired by https://atom.io/themes/atom-material-syntax
 .microlight span[data_microlight_type="not-formatted"] {
-    opacity: 1;
+    color: #B2CCD6;
 }
 
 .microlight span[data_microlight_type="keywords"] {
-    opacity: 0.9;
+    color: #F1E655;
 }
 
 .microlight span[data_microlight_type="punctuation"] {
-    opacity: 0.5;
+    color: #d9f5dd;
 }
 
 .microlight span[data_microlight_type="strings-regex"] {
-    opacity: 0.7;
+    color: #C3E88D;
 }
 
 .microlight span[data_microlight_type="comments"] {
-    opacity: 0.4;
+    color: #49656f;
 }
 ```
