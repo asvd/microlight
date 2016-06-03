@@ -1,7 +1,7 @@
 microlight.js
 =============
 
-*Note: This is a fork, view the original at https://github.com/asvd/microlight*
+*Note: This is a fork to add css based selection, view the original at https://github.com/asvd/microlight*
 
 *microlight.js* is a micro-library (2.2k minified) which improves
  readability of code snippets by highlighting, for any programming
