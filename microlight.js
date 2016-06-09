@@ -19,8 +19,8 @@
     }
 }(this, function (exports) {
     // for better compression
-    var _window       = window,
-        _document     = document,
+    var _window       = typeof window !== 'undefined' && window,
+        _document     = typeof document !== 'undefined' && document,
         appendChild   = 'appendChild',
         test          = 'test',
         // style and color templates
@@ -33,9 +33,8 @@
         el,  // current microlighted element to run through
 
         // dynamic set of nodes to highlight
-        microlighted = _document.getElementsByClassName('microlight');
+        microlighted = _document && _document.getElementsByClassName('microlight');
 
-    
     var reset = function(i) {
         for (i = 0; el = microlighted[i++];) {
             var text  = el.textContent,
@@ -46,7 +45,6 @@
                 prev2,           // the one before the previous
                 token =          // current token content
                 el.innerHTML = '',  // (and cleaning the node)
-                
                 // current token type:
                 //  0: anything else (whitespaces / newlines)
                 //  1: operator or brace
@@ -198,10 +196,12 @@
 
     exports.reset = reset;
 
-    if (_document.readyState == 'complete') {
-        reset();
-    } else {
-        _window.addEventListener('load', reset, 0);
+    if (_document) {
+      if (_document.readyState == 'complete') {
+          reset();
+      } else {
+          _window.addEventListener('load', reset, 0);
+      }
     }
 }));
 
