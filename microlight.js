@@ -30,13 +30,16 @@
         _3px_0px_5    = '3px 0px 5',
         brace         = ')',
 
-        el,  // current microlighted element to run through
+        i,
+        microlighted,
+        el;  // current microlighted element to run through
 
-        // dynamic set of nodes to highlight
-        microlighted = _document.getElementsByClassName('microlight');
 
     
-    var reset = function(i) {
+    var reset = function(cls) {
+        // nodes to highlight
+        microlighted = _document.getElementsByClassName(cls||'microlight');
+
         for (i = 0; el = microlighted[i++];) {
             var text  = el.textContent,
                 pos   = 0,       // current position
@@ -201,7 +204,7 @@
     if (_document.readyState == 'complete') {
         reset();
     } else {
-        _window.addEventListener('load', reset, 0);
+        _window.addEventListener('load', function(){reset()}, 0);
     }
 }));
 
