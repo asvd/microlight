@@ -1,6 +1,6 @@
 /**
  * @fileoverview microlight - syntax highlightning library
- * @version 0.0.5
+ * @version 0.0.6
  *
  * @license MIT, see http://github.com/asvd/microlight
  * @copyright 2016 asvd <heliosframework@gmail.com>
