@@ -42,6 +42,11 @@
 
         for (i = 0; el = microlighted[i++];) {
             var text  = el.textContent,
+                // Add a limit to the text length to prevent DoS
+                lenLimit = 10000;
+            if (text.length > lenLimit) {
+                text = text.slice(0, lenLimit);
+            }
                 pos   = 0,       // current position
                 next1 = text[0], // next character
                 chr   = 1,       // current character
