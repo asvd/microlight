@@ -8,7 +8,6 @@
  * Code structure aims at minimizing the compressed library size
  */
 
-
 (function (root, factory) {
     if (typeof define === 'function' && define.amd) {
         define(['exports'], factory);
@@ -35,7 +34,7 @@
         el;  // current microlighted element to run through
 
 
-    
+
     var reset = function(cls) {
         // nodes to highlight
         microlighted = _document.getElementsByClassName(cls||'microlight');
@@ -49,7 +48,7 @@
                 prev2,           // the one before the previous
                 token =          // current token content
                 el.innerHTML = '',  // (and cleaning the node)
-                
+
                 // current token type:
                 //  0: anything else (whitespaces / newlines)
                 //  1: operator or brace
@@ -207,4 +206,3 @@
         _window.addEventListener('load', function(){reset()}, 0);
     }
 }));
-
